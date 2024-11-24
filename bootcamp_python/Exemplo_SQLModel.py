@@ -14,7 +14,7 @@ hero_2 = Hero(name="Spider-Boy", secret_name="Pedro Parqueador")
 hero_3 = Hero(name="Rusty-Man", secret_name="Tommy Sharp", age=48)
 
 
-engine = create_engine("sqlite:///database.db")
+engine = create_engine("sqlite:///../database.db")
 
 
 SQLModel.metadata.create_all(engine)
